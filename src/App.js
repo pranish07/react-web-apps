@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import CounterApp from './apps/counterApp/counterApp';
+import UsefulWebsite from './apps/usefulwebsite/UsefulWebsite';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+ <Router>
+           <div className="App">
+            <ul className="App-header">
+            <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/usefulwebsite">UsefulWebsite</Link>
+              </li>
+              <li>
+                <Link to="/counterapp">Counter App</Link>
+              </li>
+              {/* <li>
+                <Link to="/contact">Contact Us</Link>
+              </li> */}
+            </ul>
+            <br/>
+            <hr/>
+            <br/>
+           <Routes>
+                 <Route exact path='/usefulwebsite' element={<UsefulWebsite/>}></Route>
+                 <Route exact path='/counterapp' element={<CounterApp />}></Route>
+                 {/* <Route exact path='/contact' element={< Contact />}></Route> */}
+          </Routes>
+          </div>
+       </Router>
+  </>
   );
 }
 

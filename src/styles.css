@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* useful websites */
+.uw-title{
+    background-color: green;
+    padding:.2em;
+    border-radius:.2em;
+    margin:.2em;
+    text-align: center;
+}
+.uw-desc{
+    text-align:center;
+}
+.uw-button{
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.50em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+    background-color: palevioletred;
+    color:white;
+
+}
+a .uw-button{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* counterApp */
+.button{
+    cursor:pointer;
+}
+.ca-mid{
+    text-align:center;
+}
