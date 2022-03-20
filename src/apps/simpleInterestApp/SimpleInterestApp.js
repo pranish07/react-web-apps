@@ -34,7 +34,7 @@ function calculateSi(){
       <TextField onChange={(event)=>SetR(event.target.value)} id="outlined-basic" label="Rate" variant="outlined" />
       <br />
       <br />
-      <Button onClick={calculateSi} variant="contained">Calculate</Button>
+      <Button onClick={()=>calculateSi()} variant="contained">Calculate</Button>
 
       <h3>The Simple interest is : {si}</h3>
     </>

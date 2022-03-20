@@ -4,6 +4,7 @@ import CounterApp from './apps/counterApp/counterApp';
 import UsefulWebsite from './apps/usefulwebsite/UsefulWebsite';
 import DiceGame from './apps/diceGame/DiceGame';
 import SimpleInterestApp from './apps/simpleInterestApp/SimpleInterestApp';
+import ToDoApp from './apps/todoapp/ToDoApp';
 function App() {
   return (
   <>
@@ -25,6 +26,9 @@ function App() {
               <li>
                 <Link to="/simpleinterestapp">Simple Interest App</Link>
               </li>
+              <li>
+                <Link to="/todoapp">TodoApp</Link>
+              </li>
             </ul>
             <br/>
             <hr/>
@@ -34,6 +38,7 @@ function App() {
                  <Route exact path='/counterapp' element={<CounterApp />}></Route>
                  <Route exact path='/dicegame' element={< DiceGame/>}></Route>
                  <Route exact path='/simpleinterestapp' element={< SimpleInterestApp  />}></Route>
+                 <Route exact path='/todoapp' element={< ToDoApp />}></Route>
           </Routes>
           </div>
        </Router>
