@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import CounterApp from './apps/counterApp/counterApp';
 import UsefulWebsite from './apps/usefulwebsite/UsefulWebsite';
+import DiceGame from './apps/diceGame/DiceGame';
+import SimpleInterestApp from './apps/simpleInterestApp/SimpleInterestApp';
 function App() {
   return (
   <>
@@ -17,9 +19,12 @@ function App() {
               <li>
                 <Link to="/counterapp">Counter App</Link>
               </li>
-              {/* <li>
-                <Link to="/contact">Contact Us</Link>
-              </li> */}
+              <li>
+                <Link to="/dicegame">Dice Game</Link>
+              </li>
+              <li>
+                <Link to="/simpleinterestapp">Simple Interest App</Link>
+              </li>
             </ul>
             <br/>
             <hr/>
@@ -27,7 +32,8 @@ function App() {
            <Routes>
                  <Route exact path='/usefulwebsite' element={<UsefulWebsite/>}></Route>
                  <Route exact path='/counterapp' element={<CounterApp />}></Route>
-                 {/* <Route exact path='/contact' element={< Contact />}></Route> */}
+                 <Route exact path='/dicegame' element={< DiceGame/>}></Route>
+                 <Route exact path='/simpleinterestapp' element={< SimpleInterestApp  />}></Route>
           </Routes>
           </div>
        </Router>
