@@ -3,6 +3,15 @@
     padding:0;
     box-sizing: border-box;
 }
+.App-header{
+display: flex;
+flex-direction: row;
+margin: .8em;
+}
+.App-header li{
+    margin:.5em;
+}
+
 /* useful websites */
 .uw-title{
     background-color: green;

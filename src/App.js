@@ -5,6 +5,8 @@ import UsefulWebsite from './apps/usefulwebsite/UsefulWebsite';
 import DiceGame from './apps/diceGame/DiceGame';
 import SimpleInterestApp from './apps/simpleInterestApp/SimpleInterestApp';
 import ToDoApp from './apps/todoapp/ToDoApp';
+import MotivationalQuotes from './apps/motivationalQuotes/MotivationalQuotes';
+import"./styles.css";
 function App() {
   return (
   <>
@@ -29,6 +31,9 @@ function App() {
               <li>
                 <Link to="/todoapp">TodoApp</Link>
               </li>
+              <li>
+                <Link to="/motivationalquotes">MotivationalQuotes</Link>
+              </li>
             </ul>
             <br/>
             <hr/>
@@ -39,6 +44,7 @@ function App() {
                  <Route exact path='/dicegame' element={< DiceGame/>}></Route>
                  <Route exact path='/simpleinterestapp' element={< SimpleInterestApp  />}></Route>
                  <Route exact path='/todoapp' element={< ToDoApp />}></Route>
+                 <Route exact path='/motivationalquotes' element={< MotivationalQuotes />}></Route>
           </Routes>
           </div>
        </Router>
